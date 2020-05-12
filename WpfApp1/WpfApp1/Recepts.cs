@@ -66,6 +66,11 @@ namespace WpfApp1
             if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Remove)
             {
                 _fileIOService.SaveData(recepts);//сохраняю изменения
+                recepts_one.Clear();
+                recepts_two.Clear();
+                recepts_salat.Clear();
+                recepts_desert.Clear();
+                sort();
             }
         }
 
