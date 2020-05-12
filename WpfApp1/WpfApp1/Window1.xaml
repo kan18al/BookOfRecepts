@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="500" Width="400">
+    <Grid Margin="0,0,-8,-20">
+        <TextBox x:Name="name" Text="сюда имя рецепта" Margin="20,10,20,450"/>
+        <TextBox x:Name="image_path" Text="сюда путь к картинке" Margin="20,62,207,398"/>
+        <TextBox x:Name="type" Text="сюда тип блюда" Margin="207,62,20,398"/>
+        <TextBox x:Name="text_bludo" Text="сюда сам рецепт"  Margin="20,127,20,60" AcceptsReturn="True" TextWrapping="Wrap"/>
+        <Button Click="Button_Click" Content="SAVE" FontWeight="Bold" Height="20" Margin="100,426,100,24"/>
+    </Grid>
+</Window>
