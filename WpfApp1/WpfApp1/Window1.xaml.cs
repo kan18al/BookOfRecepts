@@ -17,8 +17,16 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Recept Temp = new Recept(name.Text, image_path.Text, text_bludo.Text, type.Text);
-            recepts.receptS.Add(Temp);
+            if (type.Text == "one" || type.Text == "two" || type.Text == "salat" || type.Text == "desert")
+            {
+                Recept Temp = new Recept(name.Text, image_path.Text, text_bludo.Text, type.Text);
+                recepts.receptS.Add(Temp);
+            }
+            else
+            {
+                MessageBox.Show("поддерживаются такие типы рецептов: \"one\", \"two\", \"salat\", \"desert\"");
+            }
+            Close();
         }
     }
 }
